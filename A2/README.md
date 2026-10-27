@@ -61,6 +61,8 @@ My findings were mostly about the lack of context for comments and the discussio
 I would expect these biases to show up in a speech detector when it analyzes a comment for a pattern of speech or keywords that was flagged as toxic in this dataset, and then automatically label that comment as toxic or non-toxic without human intervention to understand human speech/text. 
 
 ## How to re-run
-Download 'toxicity_labelled_comments_3k_sample.csv' from the Github and 'wikipedia_datasets' from the Github or Figshare, this contains the 'aggression_worker_demographics.tsv', 'attack_worker_demographics.tsv', and 'toxicity_worker_demographics.tsv'.
+Download `toxicity_labelled_comments_3k_sample.csv`from the Github and `wikipedia_datasets` from the Github or Figshare, this contains the `aggression_worker_demographics.tsv`, `attack_worker_demographics.tsv`, and `toxicity_worker_demographics.tsv`.
 
-Open `A1.ipynb` and run all cells (needs `requests`, `pandas`, `matplotlib`).
+Open `hcde410-a2.ipynb` and run all code cells for questions 1-8 (needs `pandas`, `csv`, `random`) using the tsv files in the `wikipedia_datasets` folder to produce a csv file, such as `a2_all_annotator_demographics.csv`, that does not contain duplicated data. Use this to analyze for the questions.
+
+For questions 9-12, look in the `toxicity_labelled_comments_3k_sample.csv` file and analyze comments associated with their toxicity_score.
