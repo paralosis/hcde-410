@@ -1,0 +1,63 @@
+Run,Prompt,Model,Version,Timestamp,Output,Verified,Notes
+1,What is King County's median household income from the latest American Community Survey using table S1903 through data.census.gov?,Claude,Sonnet 5.5,2026-10-30 17:08,"King County’s median household income is about $124,746 (in 2024 inflation-adjusted dollars), from the most recent ACS 5-year estimates, covering 2020–2024.
+
+I couldn’t open data.census.gov or pull table S1903 directly, so this figure didn’t come from S1903 itself. It comes from the Census Bureau’s QuickFacts page, which draws on the same ACS 5-year data, and USAFacts reports a rounded $124,700 for the same period. S1903 breaks median income out by household type and race, and its “Households” column for King County should match this headline number.
+
+To see S1903 yourself, go to data.census.gov and search “S1903”. Then filter Geography to Counties > Washington > King County, and choose the 2024 ACS 5-Year release. The headline figure is in the “Households – Median income (dollars)” row, and the margin of error is next to it.
+
+The ACS 1-year estimates are also published. They’re more current but only cover areas with 65,000+ people, which includes King County. I didn’t check the 2025 1-year release.
+
+Sources:
+
+    Census QuickFacts: King County, Washington
+    USAFacts: Median household income in King County, WA
+",Wrong,"Can't directly access the most recent census data for 2025, so it gives a figure from a different year and data range. Let's me know that it can't directly access what I'm looking for from my input, but also gives instructions on how to go check it. Gave a rounded answer of $124,736 as the answer."
+2,What is King County's median household income from the latest American Community Survey using table S1903 through data.census.gov?,Claude,Sonnet 5.6,2026-10-30 17:10,"I couldn't pull the table from data.census.gov itself, so I can't give you the S1903 figure straight from there. Here is what I could verify.
+
+**The 2025 ACS 1-year may be the newest data, and I couldn't retrieve its figure.** The Census Bureau scheduled the 2025 ACS 1-year release, including subject tables like S1903, for October 29, 2026. That was after a delay, so it should now be live on data.census.gov. The sources I could reach only showed 2024 data.
+
+**The latest figure I could confirm is from the 2024 ACS 1-year.** King County's median household income was $122,080, with a margin of error of ±$2,417. That comes from Census Reporter, which uses the same Census data but is not data.census.gov or table S1903 itself. S1903's all-households median should match this.
+
+**The 2020–2024 5-year estimate is higher.** Several aggregator sites report $124,746. That is a different survey product, so don't compare it directly with the 1-year number.
+
+**To get the 2025 number yourself:**
+1. Go to data.census.gov and search ""S1903"".
+2. Choose the 2025 ACS 1-Year Estimates version.
+3. Under Geos, select County → Washington → King County.
+4. Read the ""Median income (dollars)"" row in the ""Households"" estimate column. The same row lists the margin of error.
+
+If you paste the number you see, I can help interpret it or compare it with 2024.
+
+Sources:
+- [Census Reporter – King County, WA](https://censusreporter.org/profiles/05000US53033-king-county-wa/)
+- [Census Bureau 2025 ACS Data Release Schedule](https://www.census.gov/programs-surveys/acs/news/data-releases/2025/release-schedule.html)
+- [State Demographics – King County](https://statedemographics.com/washington/king-county)",Wrong,"Same as before where it can't directly access the number for 2025, but gave $122,080 ±2,417 margin as the answer from the 2024 ACS 1-year survey and also $124,746 as the answer for the ACS 5-year survey"
+3,What is King County's median household income from the latest American Community Survey using table S1903 through data.census.gov?,Claude,Sonnet 5.7,2026-10-31 17:13,"King County's median household income is **$124,746** (in 2024 dollars) in the 2020-2024 ACS 5-year estimates, the latest 5-year release I could confirm. This comes from the Census Bureau's QuickFacts page for King County, which draws on the same ACS estimate that S1903 reports.
+
+- **I didn't pull S1903 itself.** data.census.gov is an interactive site, so I couldn't read the table directly. To confirm, search ""S1903"" on data.census.gov, filter to King County, Washington, and choose ACS 5-Year 2024. The ""Households; Estimate; Median income (dollars)"" row should match, along with its margin of error.
+- **A newer 1-year estimate may exist.** The ACS 1-year for 2025 was scheduled for release around September 2026. I didn't verify whether it is out or what it shows for King County. In the table's year selector, check whether 2025 is listed under ACS 1-Year. The 1-year figure is more current but has a wider margin of error than the 5-year.
+- **Other sites round or lag.** One source rounds it to $124,700, and several third-party sites still show the older 2019-2023 figure of $122,148.
+
+Sources:
+- [Census QuickFacts: King County, Washington](https://www.census.gov/quickfacts/fact/table/kingcountywashington/INC110223)
+- [USAFacts: King County median household income](https://usafacts.org/answers/what-is-the-income-of-a-us-household/county/king-county-wa/)",Wrong,"Same as before where it can't directly access the number for 2025, but immediately gives $124,746 as the answer from the ACS 5-year estimate. Further into the output, it gives two more figures from different sources."
+4,What is King County's median household income from the latest American Community Survey using table S1903 through data.census.gov?,ChatGPT,GPT-6,2026-10-30 17:18,"King County, Washington's median household income is $124,746, according to the 2020–2024 American Community Survey (ACS) 5-Year Estimates, in 2024 inflation-adjusted dollars. 
+Communities Count+1
+
+
+Census table: S1903 – Median Income in the Past 12 Months.
+
+You can access the data directly through Census.gov:
+
+Open Table S1903 on data.census.gov
+
+Geographic selection:
+- State: Washington
+- County: King County
+- Geography: 050 – County
+- GEOID: 53033
+Important distinction: The figure above is from the ACS 5-year estimates, which combine data collected over 2020–2024. It is not the ACS 1-year estimate.
+
+The Census Bureau's table S1903 reports median household income under the section Households – Median income (dollars).
+
+Source: U.S. Census Bureau, American Community Survey, 2020–2024 ACS 5-Year Estimates, Table S1903.",Wrong,"Gives $124,746 from the ACS 5-year estimate. Compared to previous runs with a different model, ChatGPT does not tell me that it can't directly access the numbers for 2025, and only lets me know that this number is for an ACS 5-year estimate and not 1-year. "
